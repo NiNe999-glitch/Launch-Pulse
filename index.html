@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#101519">
+  <meta name="description" content="LaunchPulse: ideas editoriales de GTA VI para creadores. Consulta fuentes oficiales y prepara títulos, hooks y guiones en español e inglés.">
+  <title>LaunchPulse — GTA VI Creator Radar</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="/styles.css">
+  <script type="module" src="/app.js"></script>
+</head>
+<body>
+<a class="skip" href="#radar">Saltar al Radar</a>
+<header class="topbar"><div class="top-inner">
+  <a class="brand" href="#radar" aria-label="LaunchPulse, inicio"><img src="/favicon.svg" width="34" height="34" alt=""><span>Launch<span class="brand-light">Pulse</span></span><span class="beta">BETA</span></a>
+  <nav aria-label="Principal"><button class="nav-link active" data-view="all" data-i18n="radar">Radar</button><button class="nav-link" data-view="saved"><span data-i18n="saved">Guardadas</span> <span id="saved-count" class="count">0</span></button><button class="nav-link" id="about-button" data-i18n="about">El proyecto</button></nav>
+  <div class="top-actions"><label class="sr-only" for="language">Idioma / Language</label><select id="language"><option value="es">ES</option><option value="en">EN</option></select><button class="secondary small" id="account-button" data-i18n="account">Mi cuenta</button></div>
+</div></header>
+<main id="radar">
+  <div class="eyebrow"><span class="eyebrow-tag">GTA VI</span><span data-i18n="workspace">CREATOR WORKSPACE</span></div>
+  <section class="intro" aria-labelledby="headline"><div><h1 id="headline" data-i18n="headline">Tu próximo vídeo<br>empieza aquí.</h1><p class="intro-copy" data-i18n="intro">De la información oficial a una idea que puedes grabar. Explora enfoques, consulta la evidencia y prepara tu contenido.</p></div>
+    <aside class="launch-note"><span class="mono" data-i18n="focus">EN EL RADAR</span><h2>Grand Theft Auto VI</h2><div class="date" data-i18n="release">19 noviembre · 2026</div><p data-i18n="platforms">PS5 · Xbox Series X|S</p><a href="https://www.rockstargames.com/VI" target="_blank" rel="noopener noreferrer" data-i18n="official">Consultar anuncio oficial ↗</a></aside>
+  </section>
+  <section class="briefing" aria-label="Estado del Radar"><div><span class="status-dot"></span><strong data-i18n="editorial">Selección editorial</strong><span class="muted" data-i18n="reviewed">Fuentes revisadas: 5 oct 2026</span></div><button class="text-button" id="method-button" data-i18n="method">Cómo seleccionamos las ideas</button></section>
+  <div class="work-grid"><section class="opportunities" aria-labelledby="list-title">
+    <div class="section-heading"><h2 id="list-title" data-i18n="opportunities">Oportunidades para crear</h2><span id="result-count" class="mono"></span></div>
+    <div class="filters"><div class="search-wrap"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Buscar tema o enfoque…" aria-label="Buscar oportunidades"></div><label class="sr-only" for="format">Formato</label><select id="format"><option value="all">Todos los formatos</option><option value="short">Short / TikTok</option><option value="video">Vídeo largo</option><option value="guide">Guía / SEO</option></select></div>
+    <div class="chips" role="group" aria-label="Filtrar por tema"><button data-topic="all" class="chip selected" aria-pressed="true" data-i18n="all">Todas</button><button data-topic="launch" class="chip" aria-pressed="false" data-i18n="launch">Lanzamiento</button><button data-topic="platforms" class="chip" aria-pressed="false" data-i18n="platformLabel">Plataformas</button><button data-topic="analysis" class="chip" aria-pressed="false" data-i18n="analysis">Análisis</button></div>
+    <div id="cards" class="cards"></div>
+    <div id="empty" class="empty" hidden><h3 data-i18n="emptyTitle">Todavía no hay ideas aquí.</h3><p data-i18n="emptyText">Prueba otros filtros o guarda una oportunidad desde el Radar.</p><button class="secondary" id="reset-filters" data-i18n="reset">Volver a todas</button></div>
+  </section><aside class="sidebar">
+    <section class="side-panel"><div class="panel-kicker" data-i18n="workflow">DE LA IDEA AL VÍDEO</div><h2 data-i18n="workflowTitle">Un buen enfoque.<br>Una fuente clara.</h2><ol class="steps"><li><span>01</span><div><strong data-i18n="step1">Elige una pregunta</strong><p data-i18n="step1copy">Empieza por lo que tu audiencia necesita entender.</p></div></li><li><span>02</span><div><strong data-i18n="step2">Comprueba la fuente</strong><p data-i18n="step2copy">Separa hechos, interpretación y lo que aún no sabemos.</p></div></li><li><span>03</span><div><strong data-i18n="step3">Hazlo tuyo</strong><p data-i18n="step3copy">Adapta el brief a tu voz y añade tu propio análisis.</p></div></li></ol></section>
+    <section class="side-panel subtle"><div class="panel-kicker" data-i18n="next">LO QUE VIENE</div><h3 data-i18n="nextTitle">De señales a oportunidades.</h3><p data-i18n="nextCopy">Estamos preparando medición de tendencias, alertas y actualización automática. Esta beta contiene ideas revisadas manualmente.</p><button class="text-button" id="roadmap-button" data-i18n="roadmap">Ver el plan de LaunchPulse</button></section>
+    <p class="local-note" data-i18n="localNote">Tus ideas guardadas se conservan en este navegador.</p>
+  </aside></div>
+</main>
+<footer><a class="brand footer-brand" href="#radar">Launch<span class="brand-light">Pulse</span></a><p data-i18n="disclaimer">Proyecto independiente. Sin afiliación con Rockstar Games o Take-Two Interactive.</p><button class="text-button" id="privacy-button" data-i18n="privacy">Privacidad de esta beta</button></footer>
+<dialog id="detail-dialog" aria-labelledby="detail-title"><div class="dialog-top"><span class="panel-kicker">CREATOR BRIEF</span><button class="icon-button close" aria-label="Cerrar">×</button></div><div id="detail-body"></div></dialog>
+<dialog id="info-dialog" aria-labelledby="info-title"><div class="dialog-top"><span class="panel-kicker">LAUNCHPULSE</span><button class="icon-button close" aria-label="Cerrar">×</button></div><div id="info-body"></div></dialog>
+<div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+</body></html>
