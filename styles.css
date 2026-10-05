@@ -6,3 +6,5 @@
 @media(max-width:530px){.top-inner{padding:17px 18px 0}.top-actions{gap:5px}.small{padding:7px 10px;font-size:12px}.beta{display:none}main{padding:28px 18px 40px}h1{font-size:42px;letter-spacing:-1.8px}.intro-copy{font-size:15px}.cards{grid-template-columns:1fr}.card{padding:22px}.card h3{font-size:22px}.filters{flex-direction:column}.filters select{width:100%}.sidebar{grid-template-columns:1fr}.subtle{margin-top:0}.section-heading{align-items:flex-start}.section-heading .mono{white-space:nowrap;padding-top:6px;font-size:10px}.chips{gap:7px}.chip{padding:6px 11px}.briefing .muted{flex-basis:100%;margin-left:14px}.side-panel h2 br{display:none}dialog{padding:21px}dialog h2{font-size:25px}footer{margin:0 18px}.card-footer{padding-top:14px}.intro{margin-bottom:26px}}
 @media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
 
+
+.manual-copy{margin-top:22px}.manual-copy summary{cursor:pointer;color:var(--lime);font-size:14px}.copy-area{margin-top:12px;border-radius:8px;resize:vertical}.dialog-status{color:var(--lime);font-size:14px}
